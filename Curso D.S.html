@@ -1,83 +1,118 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso D.S • Desenvolvimento de Sistemas</title>
-  <link rel="stylesheet" href="style.css"> <!-- pode usar o mesmo CSS do site principal -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Curso D.S • Página Completa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- NAVBAR -->
   <nav class="nav">
     <div class="container nav-inner">
-      <a href="index.html" class="brand">⬅️ Voltar</a>
-      <h1>Curso D.S.</h1>
+      <a href="index.html" class="brand">
+        <div class="logo"><span>DS</span></div>
+        <span>Curso D.S</span>
+      </a>
+      <div class="spacer"></div>
+      <a href="index.html" class="btn ghost glow">⬅️ Voltar ao site principal</a>
     </div>
   </nav>
 
+  <!-- HERO -->
   <header class="hero">
     <div class="container hero-grid">
       <div>
-        <h2>O que é o Curso D.S.?</h2>
-        <p class="lead">O Curso de Desenvolvimento de Sistemas prepara o aluno para criar, manter e inovar no mundo da tecnologia. Ele combina programação, banco de dados, design e lógica para formar profissionais completos.</p>
-        <a href="#disciplinas" class="btn">Explorar conteúdos</a>
+        <h1>Curso de <span style="background:linear-gradient(135deg,var(--brand),var(--accent)); -webkit-background-clip:text; color:transparent">Desenvolvimento de Sistemas</span></h1>
+        <p class="lead">
+          O curso técnico em Desenvolvimento de Sistemas (D.S) prepara profissionais para criar, testar e manter aplicações de software,
+          explorando áreas como Front-end, Back-end, Banco de Dados e DevOps.
+        </p>
+        <div style="margin-top:20px;">
+          <a href="index.html" class="btn pill glow">⬅️ Voltar ao site principal</a>
+        </div>
       </div>
       <div class="hero-art tilt" data-tilt>
-        <img src="https://img.icons8.com/fluency/452/source-code.png" alt="Ícone código" style="max-width:250px;">
+        <img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1200&auto=format&fit=crop" 
+             alt="Imagem ilustrando programação" 
+             style="border-radius: 16px; box-shadow:0 0 20px rgba(0,209,178,0.6)">
       </div>
     </div>
   </header>
 
-  <section id="disciplinas">
-    <div class="container">
-      <h2>📚 Principais Disciplinas</h2>
+  <!-- SEÇÃO DETALHES -->
+  <main>
+    <section class="container">
+      <h2 class="title">Disciplinas do Curso</h2>
+      <p class="subtitle">As principais áreas que você vai explorar ao longo da formação.</p>
+
       <div class="grid cols-3">
         <article class="card">
-          <h3>💻 Programação</h3>
-          <p>Fundamentos de lógica, algoritmos e linguagens como Java, Python e JavaScript.</p>
+          <div class="content">
+            <h3>🌐 Front-end</h3>
+            <p>Criação de interfaces modernas e responsivas usando HTML, CSS e JavaScript.</p>
+          </div>
         </article>
         <article class="card">
-          <h3>🗄️ Banco de Dados</h3>
-          <p>Modelagem de dados, SQL e administração de sistemas de informação.</p>
+          <div class="content">
+            <h3>⚙️ Back-end</h3>
+            <p>Desenvolvimento de APIs, integração de sistemas e regras de negócio em linguagens como Java, Python e Node.js.</p>
+          </div>
         </article>
         <article class="card">
-          <h3>🌐 Desenvolvimento Web</h3>
-          <p>Criação de sites e aplicações responsivas usando HTML, CSS e frameworks modernos.</p>
+          <div class="content">
+            <h3>🗄️ Banco de Dados</h3>
+            <p>Modelagem e manipulação de dados com SQL, NoSQL e boas práticas de segurança.</p>
+          </div>
         </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="container">
-      <h2>🚀 Mercado de Trabalho</h2>
-      <p>O profissional formado em D.S. pode atuar como desenvolvedor web, analista de sistemas, gestor de projetos e até mesmo criar seu próprio negócio no setor de tecnologia. É uma carreira promissora com alta demanda no Brasil e no mundo.</p>
-    </div>
-  </section>
+    <section class="container">
+      <h2 class="title">Mercado de Trabalho</h2>
+      <p class="subtitle">Por que investir nessa carreira?</p>
+      <p>
+        O mercado de tecnologia cresce continuamente, e profissionais formados em Desenvolvimento de Sistemas
+        têm alta demanda em empresas de software, startups, bancos, e-commerces e indústrias.
+        O curso D.S abre portas para carreiras como desenvolvedor, analista de sistemas e engenheiro de software.
+      </p>
+    </section>
 
-  <section>
-    <div class="container">
-      <h2>🎥 Vídeo Explicativo</h2>
-      <div class="media">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QvyTEx1wyOY" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    <section class="container">
+      <h2 class="title">Vídeo Explicativo</h2>
+      <p class="subtitle">Confira uma introdução ao mundo do Desenvolvimento de Sistemas.</p>
+      <div style="position:relative; padding-bottom:56.25%; height:0; margin-top:20px;">
+        <iframe src="https://www.youtube.com/embed/Ke90Tje7VS0" 
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen 
+                style="position:absolute; top:0; left:0; width:100%; height:100%; border-radius:16px;">
+        </iframe>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
+  <!-- RODAPÉ -->
   <footer>
     <div class="container foot">
-      <div>© <span id="year"></span> Curso D.S.</div>
-      <a class="btn" href="#top">⬆️ Topo</a>
+      <div>© <span id="year"></span> • Curso D.S • Feito com ❤️</div>
+      <a href="index.html" class="btn glow">⬅️ Voltar ao site principal</a>
     </div>
   </footer>
 
   <script>
-    // Atualizar ano automaticamente
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <div style="text-align:center; margin:40px 0;">
-  <a href="index.html" class="btn ghost glow">⬅😿 Voltar ao site principal</a>
-</div>
+    // Atualiza ano automaticamente
+    document.getElementById("year").textContent = new Date().getFullYear();
 
+    // Tilt 3D nos elementos
+    const tilts = document.querySelectorAll('[data-tilt]');
+    tilts.forEach(el =>{
+      el.addEventListener('mousemove', (e)=>{
+        const b = el.getBoundingClientRect();
+        const px = (e.clientX - b.left) / b.width - .5;
+        const py = (e.clientY - b.top) / b.height - .5;
+        el.style.transform = `perspective(900px) rotateY(${px*10}deg) rotateX(${-py*10}deg)`;
+      });
+      el.addEventListener('mouseleave', ()=>{ el.style.transform = 'perspective(900px) rotateY(0) rotateX(0)'; });
+    });
+  </script>
 </body>
 </html>
-
