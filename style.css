@@ -1,1 +1,35 @@
-
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 40px;
+        }
+        h2 {
+            color: #333;
+        }
+        .ia-tema {
+            margin-bottom: 30px;
+        }
+        .futurista {
+            background: linear-gradient(135deg, #0f0f0f, #222);
+            color: #0ff;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
