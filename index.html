@@ -1,68 +1,191 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-      <link rel="stylesheet" href="style.css">
-    <title>Site do Curso D.S - Inteligência Artificial & SETEC</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portal D.S - Tecnologia e Futuro</title>
+
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <style>
+   <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal D.S - Tecnologia e Futuro</title>
+
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
+<!-- Cabeçalho -->
 <header>
-    <h1>Bem-vindo ao Portal D.S</h1>
-    <p>Curso de Desenvolvimento de Sistemas - Explorando a Tecnologia</p>
+    <div><strong>Portal D.S</strong></div>
+    <nav>
+        <a href="#curso">Curso</a>
+        <a href="#ia">IA</a>
+        <a href="#futuro">SETEC</a>
+    </nav>
 </header>
 
-<!-- Seção 1: Sobre o curso D.S -->
-<section>
-    <h2>📚 Sobre o Curso de Desenvolvimento de Sistemas (D.S)</h2>
-    <p>O curso técnico em Desenvolvimento de Sistemas prepara os alunos para atuarem na área de tecnologia, com foco em programação, banco de dados, desenvolvimento web, mobile e muito mais.</p>
-    <p>Ao longo do curso, os alunos aprendem lógica de programação, linguagens como HTML, CSS, JavaScript, Python, além de práticas de desenvolvimento de software.</p>
-    
-    <img src="https://miro.medium.com/v2/resize:fit:1200/format:webp/1*opAG_7i-qQUnqY_QURqOeA.jpeg" alt="Programação" />
+<!-- Seção 1: Curso D.S -->
+<section id="curso">
+    <h2>📘 Curso de Desenvolvimento de Sistemas</h2>
+    <p>O curso técnico em Desenvolvimento de Sistemas forma profissionais para o mercado de TI, com foco em programação, banco de dados, web, mobile e metodologias ágeis.</p>
+    <p>Você aprende linguagens como HTML, CSS, JavaScript, Python e muito mais, em um ambiente voltado para projetos reais e inovação.</p>
 
-    <h3>Vídeo sobre o curso:</h3>
-    <iframe src="https://www.youtube.com/embed/x9mTqhYq_1k" title="O que é Desenvolvimento de Sistemas?"></iframe>
+    <div class="img-container">
+        <img src="https://miro.medium.com/v2/resize:fit:1200/format:webp/1*opAG_7i-qQUnqY_QURqOeA.jpeg" alt="Programação">
+    </div>
+
+    <iframe src="https://www.youtube.com/embed/x9mTqhYq_1k" title="Curso Desenvolvimento de Sistemas"></iframe>
 </section>
 
-<!-- Seção 2: Temas sobre Inteligência Artificial -->
-<section style="background-color: #f5f5f5;">
-    <h2>🤖 Inteligência Artificial</h2>
+<!-- Seção 2: Inteligência Artificial -->
+<section class="ia-section" id="ia">
+    <h2>🤖 Temas de Inteligência Artificial</h2>
+    <p>Explore as principais áreas da IA e veja como elas estão transformando o mundo ao nosso redor:</p>
 
-    <div class="ia-tema">
-        <h3>1. Chatbots e Assistentes Virtuais</h3>
-        <iframe src="https://www.youtube.com/embed/hCWLqZb1xBQ" title="Como funcionam os chatbots?"></iframe>
-    </div>
+    <div class="ia-grid">
+        <!-- Tema 1 -->
+        <div class="ia-card">
+            <h3>🗣️ Chatbots e Assistentes</h3>
+            <p>Softwares que conversam com humanos e ajudam em atendimentos, como a Siri ou o ChatGPT.</p>
+            <iframe src="https://www.youtube.com/embed/hCWLqZb1xBQ"></iframe>
+        </div>
 
-    <div class="ia-tema">
-        <h3>2. Visão Computacional</h3>
-        <iframe src="https://www.youtube.com/embed/1RiRKv1OtaI" title="Visão Computacional Explicada"></iframe>
-    </div>
+        <!-- Tema 2 -->
+        <div class="ia-card">
+            <h3>👁️ Visão Computacional</h3>
+            <p>IA que "vê" o mundo real e interpreta imagens, como reconhecimento facial e OCR.</p>
+            <iframe src="https://www.youtube.com/embed/1RiRKv1OtaI"></iframe>
+        </div>
 
-    <div class="ia-tema">
-        <h3>3. Machine Learning (Aprendizado de Máquina)</h3>
-        <iframe src="https://www.youtube.com/embed/ukzFI9rgwfU" title="O que é Machine Learning?"></iframe>
-    </div>
+        <!-- Tema 3 -->
+        <div class="ia-card">
+            <h3>📊 Machine Learning</h3>
+            <p>Ensina a máquina a aprender com dados e tomar decisões sem ser programada diretamente.</p>
+            <iframe src="https://www.youtube.com/embed/ukzFI9rgwfU"></iframe>
+        </div>
 
-    <div class="ia-tema">
-        <h3>4. IA na Saúde</h3>
-        <iframe src="https://www.youtube.com/embed/v9-i4avzA2U" title="Inteligência Artificial na área da Saúde"></iframe>
+        <!-- Tema 4 -->
+        <div class="ia-card">
+            <h3>🧬 IA na Saúde</h3>
+            <p>IA ajudando no diagnóstico de doenças, análise de exames e medicina personalizada.</p>
+            <iframe src="https://www.youtube.com/embed/v9-i4avzA2U"></iframe>
+        </div>
     </div>
 </section>
 
-<!-- Seção 3: Futuro da SETEC -->
-<section class="futurista">
-    <h2>🚀 SETEC do Futuro</h2>
-    <p>A SETEC (Semana de Tecnologia) está se transformando em um evento ainda mais interativo e imersivo. No futuro, teremos:</p>
+<!-- Seção 3: SETEC Futurista -->
+<section class="futurista" id="futuro">
+    <h2>🌌 O Futuro da SETEC</h2>
+    <p>A SETEC (Semana de Tecnologia) está evoluindo para ser uma experiência futurista, interativa e imersiva. Veja o que vem por aí:</p>
     <ul>
         <li>Realidade Aumentada em oficinas</li>
         <li>Hackathons com IA generativa</li>
-        <li>Robôs interagindo com visitantes</li>
-        <li>Palestras holográficas com especialistas internacionais</li>
+        <li>Robôs e drones interagindo com visitantes</li>
+        <li>Palestras com hologramas</li>
+        <li>Ambientes gamificados e metaverso educacional</li>
     </ul>
-    <img src="https://www.fxguide.com/wp-content/uploads/2017/07/ai-robot.jpg" alt="Futuro da tecnologia" />
+    <img src="https://wallpaperaccess.com/full/417808.jpg" alt="Tecnologia do Futuro">
 </section>
+
+<!-- Rodapé -->
+<footer>
+    &copy; 2025 Portal D.S — Criado por estudantes apaixonados por tecnologia 💻
+</footer>
 
 </body>
 </html>
 
+    </style>
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header>
+    <div><strong>Portal D.S</strong></div>
+    <nav>
+        <a href="#curso">Curso</a>
+        <a href="#ia">IA</a>
+        <a href="#futuro">SETEC</a>
+    </nav>
+</header>
+
+<!-- Seção 1: Curso D.S -->
+<section id="curso">
+    <h2>📘 Curso de Desenvolvimento de Sistemas</h2>
+    <p>O curso técnico em Desenvolvimento de Sistemas forma profissionais para o mercado de TI, com foco em programação, banco de dados, web, mobile e metodologias ágeis.</p>
+    <p>Você aprende linguagens como HTML, CSS, JavaScript, Python e muito mais, em um ambiente voltado para projetos reais e inovação.</p>
+
+    <div class="img-container">
+        <img src="https://miro.medium.com/v2/resize:fit:1200/format:webp/1*opAG_7i-qQUnqY_QURqOeA.jpeg" alt="Programação">
+    </div>
+
+    <iframe src="https://www.youtube.com/embed/x9mTqhYq_1k" title="Curso Desenvolvimento de Sistemas"></iframe>
+</section>
+
+<!-- Seção 2: Inteligência Artificial -->
+<section class="ia-section" id="ia">
+    <h2>🤖 Temas de Inteligência Artificial</h2>
+    <p>Explore as principais áreas da IA e veja como elas estão transformando o mundo ao nosso redor:</p>
+
+    <div class="ia-grid">
+        <!-- Tema 1 -->
+        <div class="ia-card">
+            <h3>🗣️ Chatbots e Assistentes</h3>
+            <p>Softwares que conversam com humanos e ajudam em atendimentos, como a Siri ou o ChatGPT.</p>
+            <iframe src="https://www.youtube.com/embed/hCWLqZb1xBQ"></iframe>
+        </div>
+
+        <!-- Tema 2 -->
+        <div class="ia-card">
+            <h3>👁️ Visão Computacional</h3>
+            <p>IA que "vê" o mundo real e interpreta imagens, como reconhecimento facial e OCR.</p>
+            <iframe src="https://www.youtube.com/embed/1RiRKv1OtaI"></iframe>
+        </div>
+
+        <!-- Tema 3 -->
+        <div class="ia-card">
+            <h3>📊 Machine Learning</h3>
+            <p>Ensina a máquina a aprender com dados e tomar decisões sem ser programada diretamente.</p>
+            <iframe src="https://www.youtube.com/embed/ukzFI9rgwfU"></iframe>
+        </div>
+
+        <!-- Tema 4 -->
+        <div class="ia-card">
+            <h3>🧬 IA na Saúde</h3>
+            <p>IA ajudando no diagnóstico de doenças, análise de exames e medicina personalizada.</p>
+            <iframe src="https://www.youtube.com/embed/v9-i4avzA2U"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 3: SETEC Futurista -->
+<section class="futurista" id="futuro">
+    <h2>🌌 O Futuro da SETEC</h2>
+    <p>A SETEC (Semana de Tecnologia) está evoluindo para ser uma experiência futurista, interativa e imersiva. Veja o que vem por aí:</p>
+    <ul>
+        <li>Realidade Aumentada em oficinas</li>
+        <li>Hackathons com IA generativa</li>
+        <li>Robôs e drones interagindo com visitantes</li>
+        <li>Palestras com hologramas</li>
+        <li>Ambientes gamificados e metaverso educacional</li>
+    </ul>
+    <img src="https://wallpaperaccess.com/full/417808.jpg" alt="Tecnologia do Futuro">
+</section>
+
+<!-- Rodapé -->
+<footer>
+    &copy; 2025 Portal D.S — Criado por estudantes apaixonados por tecnologia 💻
+</footer>
+
+</body>
+</html>
