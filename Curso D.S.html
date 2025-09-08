@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso D.S • Desenvolvimento de Sistemas</title>
+  <link rel="stylesheet" href="style.css"> <!-- pode usar o mesmo CSS do site principal -->
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">⬅️ Voltar</a>
+      <h1>Curso D.S.</h1>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h2>O que é o Curso D.S.?</h2>
+        <p class="lead">O Curso de Desenvolvimento de Sistemas prepara o aluno para criar, manter e inovar no mundo da tecnologia. Ele combina programação, banco de dados, design e lógica para formar profissionais completos.</p>
+        <a href="#disciplinas" class="btn">Explorar conteúdos</a>
+      </div>
+      <div class="hero-art tilt" data-tilt>
+        <img src="https://img.icons8.com/fluency/452/source-code.png" alt="Ícone código" style="max-width:250px;">
+      </div>
+    </div>
+  </header>
+
+  <section id="disciplinas">
+    <div class="container">
+      <h2>📚 Principais Disciplinas</h2>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3>💻 Programação</h3>
+          <p>Fundamentos de lógica, algoritmos e linguagens como Java, Python e JavaScript.</p>
+        </article>
+        <article class="card">
+          <h3>🗄️ Banco de Dados</h3>
+          <p>Modelagem de dados, SQL e administração de sistemas de informação.</p>
+        </article>
+        <article class="card">
+          <h3>🌐 Desenvolvimento Web</h3>
+          <p>Criação de sites e aplicações responsivas usando HTML, CSS e frameworks modernos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>🚀 Mercado de Trabalho</h2>
+      <p>O profissional formado em D.S. pode atuar como desenvolvedor web, analista de sistemas, gestor de projetos e até mesmo criar seu próprio negócio no setor de tecnologia. É uma carreira promissora com alta demanda no Brasil e no mundo.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>🎥 Vídeo Explicativo</h2>
+      <div class="media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QvyTEx1wyOY" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot">
+      <div>© <span id="year"></span> Curso D.S.</div>
+      <a class="btn" href="#top">⬆️ Topo</a>
+    </div>
+  </footer>
+
+  <script>
+    // Atualizar ano automaticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
