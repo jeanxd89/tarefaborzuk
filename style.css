@@ -134,8 +134,18 @@
  
 
 
- 
+.btn.glow {
+  box-shadow: 0 0 12px rgba(0, 209, 178, 0.7), 
+              0 0 20px rgba(0, 209, 178, 0.5);
+  transition: all 0.3s ease;
 }
+
+.btn.glow:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 16px rgba(0, 209, 178, 1), 
+              0 0 32px rgba(0, 209, 178, 0.9);
+}
+
 
 
 
