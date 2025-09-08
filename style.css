@@ -1,35 +1,138 @@
-  body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+  margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
             scroll-behavior: smooth;
         }
-        header {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 40px;
-        }
-        h2 {
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
             color: #333;
         }
-        .ia-tema {
-            margin-bottom: 30px;
+
+        /* Cabeçalho fixo */
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Orbitron', sans-serif;
         }
-        .futurista {
-            background: linear-gradient(135deg, #0f0f0f, #222);
-            color: #0ff;
+
+        header nav a {
+            color: #00ffc8;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: 0.3s;
         }
+
+        header nav a:hover {
+            color: #fff;
+        }
+
+        /* Seções */
+        section {
+            padding: 80px 40px;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Imagens */
+        .img-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Vídeos */
         iframe {
             width: 100%;
             max-width: 560px;
             height: 315px;
-            border: none;
+            margin-top: 20px;
+            border-radius: 10px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+
+        /* Grid de temas de IA */
+        .ia-section {
+            background: #eef2f3;
+        }
+
+        .ia-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .ia-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .ia-card:hover {
+            transform: scale(1.03);
+        }
+
+        /* Estilo futurista */
+        .futurista {
+            background: radial-gradient(ellipse at center, #0f0f0f 0%, #1a1a1a 100%);
+            color: #0ff;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .futurista ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .futurista li::before {
+            content: "🚀 ";
+        }
+
+        .futurista img {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 2px solid #0ff;
+        }
+
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header nav {
+                margin-top: 10px;
+            }
         }
